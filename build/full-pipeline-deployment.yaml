@@ -6,7 +6,7 @@
 
 steps:
 - name: 'gcr.io/cloud-builders/git'
-  args: ['clone', '--single-branch', '--branch', '--username=Amol8090', '--password=Github@1020',
+  args: ['clone', '--single-branch', '--branch',
          '$_BRANCH','$_REPO_URL',
          '--depth', '1',
          '--verbose']

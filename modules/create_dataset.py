@@ -6,7 +6,7 @@ import os
 
 def create_dataset(file_name: str='old_data.xlsx'):
     """
-    Save the csv dataset in the data module and create the label encoder file
+    Save the csv dataset in the data modules and create the label encoder file
 
     Args:
         file_name (str, optional): name of the raw data file. Defaults to 'old_data.xlsx'.

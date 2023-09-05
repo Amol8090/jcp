@@ -20,13 +20,13 @@ steps:
 
 - name: 'gcr.io/cloud-builders/gsutil'
   args: ['cp', '*.csv', 'gs://$_PROJECT-vertex-default/$_PIPELINE_NAME/data']
-  dir: 'JCP/modules/data'
+  dir: 'jcp/modules/data'
   id: 'Copy Data'
   waitFor: ['Copy Modules']
 
 - name: 'gcr.io/cloud-builders/gsutil'
   args: ['cp', '*.txt', 'gs://$_PROJECT-vertex-default/$_PIPELINE_NAME/best_hyperparameters']
-  dir: 'JCP/modules/best_hyperparameters'
+  dir: 'jcp/modules/best_hyperparameters'
   id: 'Copy Hyperparameter'
   waitFor: ['Copy Data']
 
@@ -36,7 +36,7 @@ steps:
          '--pipeline-path', 'kubeflow_v2_runner.py',
          '--engine', 'vertex',
         ]
-  dir: 'JCP/tfx-pipeline'
+  dir: 'jcp/tfx-pipeline'
   id: 'Create Pipeline'
   waitFor: ['Copy Hyperparameter']
 
@@ -48,6 +48,6 @@ steps:
          '--project', '$_PROJECT',
          '--region', '$_REGION'
         ]
-  dir: 'JCP/tfx-pipeline'
+  dir: 'jcp/tfx-pipeline'
   id: 'Create Pipeline Run'
   waitFor: ['Create Pipeline']

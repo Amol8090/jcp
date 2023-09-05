@@ -14,7 +14,7 @@ steps:
   
 - name: 'gcr.io/cloud-builders/gsutil'
   args: ['cp', '*.py', '*.pkl', 'gs://$_PROJECT-vertex-default/$_PIPELINE_NAME/modules']
-  dir: 'JCP/modules'
+  dir: 'jcp/modules'
   id: 'Copy Modules'
   waitFor: ['Clone Repository']
 

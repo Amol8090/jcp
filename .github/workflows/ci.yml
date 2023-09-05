@@ -12,7 +12,7 @@ env:
             _PROJECT=${{ secrets.GCP_PROJECT_ID }},\
             _REGION=us-central1,\
             _PIPELINE_NAME=sentiment-analysis-tfx,\
-            _REPO_URL=https://github.com/Amol8090/jcp,\
+            _REPO_URL=https://github.com/Amol8090/jcp.git,\
             _BRANCH=main,\
             "    
 jobs:

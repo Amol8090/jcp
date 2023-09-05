@@ -37,7 +37,7 @@ def create_pipeline(
     enable_cache: Optional[bool] = False,
     metadata_connection_config: Optional[metadata_store_pb2.ConnectionConfig] = None,
     ) -> pipeline.Pipeline:
-    """Implements the pipeline with TFX."""
+    """Implement the pipeline with TFX."""
 
     # initialize components list
     components = []

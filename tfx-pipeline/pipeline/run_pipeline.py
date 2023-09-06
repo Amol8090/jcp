@@ -71,7 +71,7 @@ def create_pipeline(
         schema=schema_gen.outputs['schema'])
     components.append(example_validator)
 
-    # Performs transformations and feature engineering in training and serving.
+    # Performs transformations and feature engineering in training and and serving.
     transform = Transform(
         examples=example_gen.outputs['examples'],
         schema=schema_gen.outputs['schema'],

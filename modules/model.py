@@ -17,7 +17,7 @@ _TEXT_FEATURE_KEYS = [
 _LABEL_KEY = 'sentiment'
 
 
-# Utility function for renaming the feature
+# Utility function for renaming the feature s
 def _transformed_name(key: Text) -> Text:
     """Generate the name of the transformed feature from the original name."""
     return key + '_xf'

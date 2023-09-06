@@ -19,7 +19,7 @@ _LABEL_KEY = 'sentiment'
 
 # Utility function for renaming the feature
 def _transformed_name(key: Text) -> Text:
-    """Generate the name of the transformed feature from the original names."""
+    """Generate the name of the transformed feature from the original name."""
     return key + '_xf'
 
 

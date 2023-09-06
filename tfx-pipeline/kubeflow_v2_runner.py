@@ -40,7 +40,7 @@ def run():
                         serving_model_dir=SERVING_MODEL_DIR,
                         # TODO(step 9): (Optional) Uncomment below to use Cloud AI Platform.
                         ai_platform_training_args=configs.GCP_AI_PLATFORM_TRAINING_ARGS,
-                        # TODO(step 9): (Optional) Uncomment below to use Cloud AI Platform.
+                        #TODO(step 9): (Optional) Uncomment below to use Cloud AI Platform.
                         ai_platform_serving_args=configs.GCP_AI_PLATFORM_SERVING_ARGS,
                         )
     
